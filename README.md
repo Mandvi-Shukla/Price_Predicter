@@ -23,11 +23,13 @@ A machine learning project for predicting house prices based on various features
 
 ## Software and Tools Required
 
-- [GitHub Account](https://github.com)  
-- [Heroku Account](https://www.heroku.com) or [Netlify Account](https://www.netlify.com/)  
-- [VS Code IDE](https://code.visualstudio.com)  
-- [Git CLI](https://git-scm.com/)  
-- Python 3.8+  
+- [Python 3.8+](https://www.python.org/downloads/) — for running ML model training and Flask backend  
+- [VS Code IDE](https://code.visualstudio.com/) — for writing and managing project code  
+- [Git CLI](https://git-scm.com/) — for version control and pushing code to GitHub  
+- [GitHub Account](https://github.com/) — to host and manage the project repository  
+- [Jupyter Notebook](https://jupyter.org/install) — for data exploration and model experimentation  
+- [Virtual Environment (venv)](https://docs.python.org/3/library/venv.html) — to isolate Python dependencies  
+- (Optional) [Postman](https://www.postman.com/) — for testing the Flask API endpoints  
 
 ---
 
