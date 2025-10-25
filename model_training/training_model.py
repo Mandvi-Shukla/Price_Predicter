@@ -1,7 +1,7 @@
 # ============================================================
-# PROJECT: Boston House Price Prediction
-# PHASE: Data Preparation + Model Training
-# AUTHOR: Mandvi
+# training_model.py
+# Trains the Boston House Price Prediction model
+# Saves trained model and preprocessing pipeline for Flask app
 # ============================================================
 import os
 os.chdir(r"c:\mandvi\machine learning\final project")
@@ -117,8 +117,9 @@ print(f"Final Test RMSE: {final_rmse:.2f}")
 # 8. SAVE MODEL + PIPELINE
 # ============================================================
 
-joblib.dump(best_model, "best_model.pkl")
-joblib.dump(full_pipeline, "preprocessing_pipeline.pkl")
+# Save model and preprocessing pipeline one level up
+joblib.dump(best_model, os.path.join("..", "best_model.pkl"))
+joblib.dump(full_pipeline, os.path.join("..", "preprocessing_pipeline.pkl"))
 
 print("\n Model and pipeline saved successfully!")
 
