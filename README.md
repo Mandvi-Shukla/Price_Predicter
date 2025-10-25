@@ -14,9 +14,7 @@ python -m venv PRCE_PREDICTER_ENV
 ```
  -->
 
- Sure! Here’s the full `README.md` ready for direct copy-paste:
 
-````markdown
 # Price Predicter
 
 A machine learning project for predicting house prices based on various features. This project includes a trained model, preprocessing pipeline, and a web interface for predictions.
@@ -73,17 +71,33 @@ pip install -r requirements.txt
 ## Project Structure
 
 ```
-Price_Predicter/
+PRICE_PREDICTOR/
 │
-├── model_training/        # Scripts for training ML models
-├── templates/             # HTML templates for web interface
-├── app.py                 # Flask application
-├── requirements.txt       # Python dependencies
-└── README.md              # Project documentation
+├── .git/                        # Git version control directory
+├── ENV_PRICE_PREDICTOR/         # Isolated Python virtual environment
+│
+├── model_training/              # Scripts, data, and resources for model development
+│   ├── feature_description.txt  # Documentation describing dataset features
+│   ├── HousingData.csv          # The raw or processed dataset
+│   └── training_model.py        # Python script for model training
+│
+├── static/                      # Web-accessible static files
+│   └── css/
+│       └── styles.css           # Styling for the web interface
+│
+├── templates/                   # HTML templates for the web interface
+│   └── home.html                # Main page for prediction input/output
+│
+├── .gitignore                   # Specifies files/folders to ignore in Git
+├── app.py                       # Main Flask application file
+├── LICENSE                      # Project licensing information
+├── preprocessing_pipeline.pkl   # Saved scikit-learn preprocessing pipeline
+├── README.md                    # Project documentation
+├── requirements.txt             # Python dependencies for the project
+└── trained_model.pkl            # The final serialized machine learning model
 ```
 
 ---
 
 ## Deployment
-
 
