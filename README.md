@@ -99,5 +99,3 @@ PRICE_PREDICTOR/
 
 ---
 
-## Deployment
-
